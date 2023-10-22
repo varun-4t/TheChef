@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="food, cafe, restro, restaurant, cheap rates">
+    <meta name="author" content="Varun Tahiliani">
+    <link rel="icon" href="Images/CHEF.jpg">
+    <title>Frequently Asked Questions by Users</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <header class="top-bar">
+        <a href="..\index.html"><img src="Images/chef.png" alt="TheChef" class="logo">
+            <div class="title">
+                <h1>TheChef</h1>
+            </div>
+        </a>
+        <a href="..\Supportive Files\menu.html"><img src="Images\cart.png" title="Add items" class="cart"></a>
+        <a href="membership.html" class="premium">Membership</a>
+        <div>
+            <nav class="navbar">
+                <ul class="box">
+                    <li><a href="..\index.html" title="Home Page ">Home</a></li>
+                    <li><a href="menu.html" title="Menu Page">Menu</a></li>
+                    <li><a href="Services.html" title="Services we provide">Services</a></li>
+                    <li><a href="..\index.html#about" title="About Section">About</a></li>
+                    <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Frequently Asked Questions</h1>
+        <div class="qna">
+            <h3 class="ques" onclick="show('ans1',0)">What are opening hours?</h3><img src="Images/down.png" class="arrow">
+            <p class="ans" id="ans1">Operating hours vary from store to store, and you can check the operating time of your
+                neighbourhood store by logging in to the app.</p>
+            <hr>
+            <h3 class="ques" onclick="show('ans2',1)">Is there a minimum order value?</h3><img src="Images/down.png" class="arrow">
+            <p class="ans" id="ans2">No, we don't have a minimum order value.</p>
+            <hr>
+            <h3 class="ques" onclick="show('ans3',2)">Do you charge for the delivery?</h3><img src="Images/down.png" class="arrow">
+            <p class="ans" id="ans3">Yes, we cahrge a Delivery fee.</p>
+            <hr>
+            <h3 class="ques">Question 4</h3>
+            <hr>
+            <h3 class="ques">Question 5</h3>    
+        </div>
+
+    </main>
+
+    <script src="faq.js"></script>
+</body>
+
+</html>

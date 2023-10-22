@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="food, cafe, restro, restaurant, cheap rates">
+    <meta name="author" content="Varun Tahiliani">
+    <link rel="icon" href="Images/CHEF.jpg">
+    <title>TheChef - GOLD Membership</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="top-bar">
+        <a href="..\index.html"><img src="Images/chef.png" alt="TheChef" class="logo">
+            <div class="title">
+                <h1>TheChef</h1>
+            </div>
+        </a>
+        <a href="menu.html"><img src="../Images/cart.png" title="Add items" class="cart"></a>
+        <a href="membership.html" class="premium">Membership</a>
+        <div>
+            <nav class="navbar">
+                <ul class="box">
+                    <li><a href="..\index.html" title="Home Page ">Home</a></li>
+                    <li><a href="menu.html" title="Menu Page">Menu</a></li>
+                    <li><a href="Services.html" title="Services we provide">Services</a></li>
+                    <li><a href="..\index.html#about" title="About Section">About</a></li>
+                    <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="item3">
+        <p class="box3-heading">TheChef</p>
+        <img src="Images/gold.png" class="gold">
+        <form class="info">
+            <li class="input-fields"><label for="name">Name :</label><input type="text" id="name"></li>
+            <li class="input-fields"><label for="mail">E-mail : </label><input type="email" id="mail"></li>
+            <li class="input-fields"><label for="Phone">Phone : </label><input type="tel" id="Phone"></li>
+        </form>
+        <article id="member_head"></article>
+        <section class="membership-box">
+            <div class="first">
+                <h2> @199 for 3 Months</h2>
+                <li>FREE home delivery on order above 199</li>
+                <li>Upto 30% extra off</li>
+                <li>No delay guarantee</li>
+                <button class="join" onclick="member()">Join Now</button>
+            </div>
+            <div>
+                <h2>@259 for 6 Months</h2>
+                <li>20% off on dinning booking</li>
+                <li>FREE home delivery on order above 199</li>
+                <li>Upto 30% extra off</li>
+                <li>No delay guarantee</li>
+                <li>VIP access during rush hours</li>
+                <button class="join" onclick="member()">Join Now</button>
+            </div>
+            <div>
+                <h2>@499 for 10 Months</h2>
+                <li>30% off on dinning booking</li>
+                <li>FREE home delivery on order above 159</li>
+                <li>Upto 50% extra off</li>
+                <li>No delay guarantee</li>
+                <li>VIP access during rush hours</li>
+                <button class="join" onclick="member()">Join Now</button>
+            </div>
+        </section>
+    </main>
+    <script src="membership.js"></script>
+</body>
+
+</html>

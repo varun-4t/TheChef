@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="food, cafe, restro, restaurant, cheap rates">
+	<meta name="author" content="Varun Tahiliani">
+	<link rel="icon" href="Images/CHEF.jpg">
+	<title>TheChef - Menu Choose food of your choice</title>
+	<link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<header class="top-bar">
+		<a href="..\index.html"><img src="Images/chef.png" alt="TheChef" class="logo">
+			<div class="title">
+				<h1>TheChef</h1>
+			</div>
+		</a>
+		<a href="menu.html"><img src="../Images/cart.png" title="Add items" class="cart"></a>
+		<a href="membership.html" class="premium">Membership</a>
+		<div>
+			<nav class="navbar">
+				<ul class="box">
+					<li><a href="..\index.html" title="Home Page ">Home</a></li>
+					<li><a href="Supportive FIles/menu.html" title="Menu Page">Menu</a></li>
+					<li><a href="Services.html" title="Services we provide">Services</a></li>
+					<li><a href="..\index.html#about" title="About Section">About</a></li>
+					<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+					<li><a href="faq.html">FAQs</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- adding cart in which added items will be displayed -->
+	<aside class="cart-box">
+		<h2 class="cart-title">TheChef</h2>
+		<hr class="line">
+		<p id="before">Items Added will appear here</p>
+		<p id="food"></p>
+		<hr class="line">
+		<p id="total"></p>
+	</aside>
+	<button class="order">Check Out</button>
+
+	<!-- Menu of the Restaurant -->
+	<main class="left-side">
+		<ul>
+			<h1 class="head">Starter Veg</h1>
+			<li class="food">Roasted Papad</li>
+			<li class="food">Masala Papad</li>
+			<li class="food">French Fries</li>
+			<li class="food">Veg Manchurian Dry</li>
+			<li class="food">Mashroom Chilly Dry</li>
+			<li class="food">Paneer Chilly Dry</li>
+			<li class="food">Paneer Manchurian Dry</li>
+			<h1 class="head">Special Veg Noodles & Rice</h1>
+			<li class="food">Veg Hakka Noodles</li>
+			<li class="food">Schezwan Hakka Noodles</li>
+			<li class="food">Chilly Garlic Noodles</li>
+			<li class="food">American Chopsuey</li>
+			<li class="food">Schezwan Chopsuey</li>
+			<li class="food">Chowmein</li>
+			<li class="food">Veg Fried Rice</li>
+			<li class="food">Chilly Garlic Rice</li>
+			<li class="food">Manchurian Fried Rice</li>
+			<h1 class="head">Indian Main Course</h1>
+			<li class="food">Chole Masala</li>
+			<li class="food">Mashroom Masala</li>
+			<li class="food">Kaju Masala</li>
+			<li class="food">Sindhi Curry</li>
+			<li class="food">Dal Makhani</li>
+			<li class="food">Aloo Gobi</li>
+			<li class="food">Palak Paneer</li>
+			<li class="food">Shahi Paneer</li>
+			<h1 class="head">Breads</h1>
+			<li class="food">Roti</li>
+			<li class="food">Naan</li>
+			<li class="food">Butter Naan</li>
+			<li class="food">Amritsari Kulcha</li>
+			<li class="food">Aalo Paratha</li>
+			<h1 class="head">Desserts</h1>
+			<li class="food" onclick="addFood()">Vanila / Strawberry / Chocolate /
+				<br>Mango / Butter Scotch
+			</li>
+			<li class="food">Casatta</li>
+			<li class="food">Gulab Jamun</li>
+		</ul>
+
+		<!-- List of Prices  -->
+		<div class="price">
+			<ol>
+				<li>15</li><button class='add-btn' title="Add Item" onclick="addFood('Roasted Papad',15)">Add</button>
+				<li>30</li><button class='add-btn' title="Add Item" onclick="addFood('Masala Papad',30)">Add</button>
+				<li>50</li><button class='add-btn' title="Add Item" onclick="addFood('French Fries',50)">Add</button>
+				<li>90</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Veg manchurian dry',90)">Add</button>
+				<li>110</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Mashroom chilly dry',110)">Add</button>
+				<li>120</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Paneer chilly dry',120)">Add</button>
+				<li>120</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Paneer manchurian dry',120)">Add</button>
+				<br><br><br>
+				<li>90</li><button class='add-btn' title="Add Item" onclick="addFood('Veg hakka noodles',90)"">Add</button>
+				<li>100</li><button class='add-btn' title=" Add Item" onclick=" addFood('Schezwan hakka noodles',100)">Add</button>
+				<li>90</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Chilly garlic noodles',90)">Add</button>
+				<li>100</li><button class='add-btn' title="Add Item"
+					onclick="addFood('American chopsuey',100)">Add</button>
+				<li>100</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Schezwan chopsuey',100)">Add</button>
+				<li>50</li><button class='add-btn' title="Add Item" onclick="addFood('Chowmein',50)">Add</button>
+				<li>80</li><button class='add-btn' title="Add Item" onclick="addFood('Veg fried rice',80)">Add</button>
+				<li>80</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Chilly Garlic Rice',80)">Add</button>
+				<li>110</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Manchurian Fried Rice',110)">Add</button>
+				<br>
+				<p>Regular/Large</p>
+				<li>70/110</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Chole masala',p=price(0))">Add</button>
+				<li>90/140</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Mashroom masala',p=price(1))">Add</button>
+				<li>90/140</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Kaju masala',p=price(2))">Add</button>
+				<li>90/140</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Sindhi curry',p=price(3))">Add</button>
+				<li>80/120</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Dal makhani',p=price(4))">Add</button>
+				<li>70/110</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Aloo gobi',p=price(5))">Add</button>
+				<li>80/130</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Palak paneer',p=price(6))">Add</button>
+				<li>80/130</li><button class='add-btn' title="Add Item"
+					onclick="addFood2('Shahi paneer',p=price(7))">Add</button>
+				<br><br><br>
+				<li>10</li><button class='add-btn' title="Add Item" onclick="addFood('Roti',10)">Add</button>
+				<li>25</li><button class='add-btn' title="Add Item" onclick="addFood('Naan',25)">Add</button>
+				<li>35</li><button class='add-btn' title="Add Item" onclick="addFood('Butter Naan',35)">Add</button>
+				<li>50</li><button class='add-btn' title="Add Item"
+					onclick="addFood('Amritsari Kulcha',50)">Add</button>
+				<li>30</li><button class='add-btn' title="Add Item" onclick="addFood('Aalo',30)">Add</button>
+				<br><br><br><br>
+				<li>126</li><button class='add-btn' title="Add Item" onclick="addFood3(ice=askuser)">Add</button>
+				<li>163</li><button class='add-btn' title="Add Item" onclick="addFood('Casatta',163)">Add</button>
+				<li>60</li><button class='add-btn' title="Add Item" onclick="addFood('Gulab jamun',60)">Add</button>
+			</ol>
+		</div>
+	</main>
+
+	<!-- adding JavaScript -->
+	<script src="menu.js"></script>
+</body>
+
+</html>
